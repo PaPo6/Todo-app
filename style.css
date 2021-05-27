@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    background-image: hsl(0, 0%, 98%);
+}
+
+.banner-image-dark {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    z-index: -2;
+}
+
+.banner-image-light {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+
+}
+
+.wrapper {
+    margin: 8.5vh auto;
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+}
+
+.wrapper .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.wrapper .header .logo {
+    color: white;
+    letter-spacing: 20px;
+    font-size: 3rem;
+}
+
+.wrapper .add-element {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.add-element input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 2rem;
+    background-color: #f9f9f9;
+}
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0 15px;
+
+}
+
+.todoList .close {
+    position: absolute;
+    right: 0;
+
+
+}
+
+.delete-stuff {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.delete-stuff .btn-delete {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.attribution {
+    margin: auto;
+    text-align: center;
+}
