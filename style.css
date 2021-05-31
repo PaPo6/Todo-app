@@ -84,10 +84,12 @@ header .switch-dark {
 
 .todo-content {
     width: 100%;
+    height: 600px;
     background-color: white;
     border-radius: 5px;
     padding: .8rem 1.3rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
 
 }
 
@@ -129,14 +131,22 @@ header .switch-dark {
     vertical-align: middle;
 }
 
+.todo-list li input:checked {
+    border:1px solid red;
+}
+
+.todo-list li input:checked + span{
+    opacity: .5;
+    text-decoration: line-through;
+}
 .todo-list li:hover {
     background-color: #f9f9f9;
 }
 
-.completed {
+/* .completed {
     opacity: .5;
     text-decoration: line-through;
-}
+} */
 
 .todo-activation-buttons {
     display: flex;

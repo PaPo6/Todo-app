@@ -1,24 +1,3 @@
-// let input = document.querySelector('#add');
-// let btn = document.querySelector('.btnCheck');
-// let toDoList = document.querySelector('.todo-list');
-// let el = document.getElementsByTagName('.todo-list li');
-
-// // let listLenght = li.lenght;
-
-// const addElement = function () {
-//     let txt = document.getElementById("#add").value;
-//     if(txt === ""){
-//         alert("you must write something");
-//     } else {
-//         let li = document.createElement('li');
-//         li.innerHTML = txt;
-//         toDoList.insertBefore(li,toDoList.childNodes[0]);
-//         input.value = '';
-//     }
-
-// };
-
-// btn.addEventListener("click", addElement);
 
 
 //add element
@@ -32,7 +11,7 @@ let toDoListLenght = toDoList.lenght;
 // let listLenght = li.lenght;
 
 const addElement = function () {
-    let txt = document.getElementById("#add").value;
+    let txt = document.getElementById("add").value;
     if(txt === ""){
         alert("you must write something");
     } else {
@@ -46,9 +25,15 @@ const addElement = function () {
 
 btn.addEventListener("click", addElement);
 
+//mark todos as complete
+// toDoList.addEventListener('click', e => {
+//     if(e.target.tagName == 'SPAN'){
+//         e.target.classList.toggle('completed');
+//     }
+// })
 
-toDoList.addEventListener('click', e => {
-    if(e.target.tagName == 'SPAN'){
-        e.target.classList.toggle('completed');
+input.addEventListener("keydown", (event) => {
+    if(event.keyCode == 13) {
+    addElement()
     }
-})
+});
