@@ -1,21 +1,54 @@
-let input = document.querySelector('#add');
-let list = document.querySelector('.todoList')
+// let input = document.querySelector('#add');
+// let btn = document.querySelector('.btnCheck');
+// let toDoList = document.querySelector('.todo-list');
+// let el = document.getElementsByTagName('.todo-list li');
 
-let add = function () {
-    let text = input.value;
-    if(text === ""){
+// // let listLenght = li.lenght;
+
+// const addElement = function () {
+//     let txt = document.getElementById("#add").value;
+//     if(txt === ""){
+//         alert("you must write something");
+//     } else {
+//         let li = document.createElement('li');
+//         li.innerHTML = txt;
+//         toDoList.insertBefore(li,toDoList.childNodes[0]);
+//         input.value = '';
+//     }
+
+// };
+
+// btn.addEventListener("click", addElement);
+
+
+//add element
+let input = document.querySelector('#add');
+let btn = document.querySelector('.btnCheck');
+let toDoList = document.querySelector('.todo-list');
+let li = document.getElementsByTagName('.todo-list li');
+
+let toDoListLenght = toDoList.lenght;
+
+// let listLenght = li.lenght;
+
+const addElement = function () {
+    let txt = document.getElementById("#add").value;
+    if(txt === ""){
         alert("you must write something");
     } else {
-        let li = document.createElement('li');
-        li.innerHTML = text;
-        list.insertBefore(li, list.childNodes[0]);
-        input.value='';
-
+        toDoList.innerHTML += `<li>
+        <input type="checkbox" id="todo_${toDoListLenght}">
+        <span>${txt}</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete"></li>`;
     }
-}
 
-input.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      // code for enter
+};
+
+btn.addEventListener("click", addElement);
+
+
+toDoList.addEventListener('click', e => {
+    if(e.target.tagName == 'SPAN'){
+        e.target.classList.toggle('completed');
     }
-});
+})

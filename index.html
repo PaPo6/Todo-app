@@ -4,85 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
   <title>Frontend Mentor | Todo app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  
-    <img src="images/bg-desktop-light.jpg" class="banner-image-light">
-    <img src="images/bg-desktop-dark.jpg" class="banner-image-dark">
-    <div class="wrapper">   
-      <div class="header">
-        <h2 class="logo">TODO</h1>
-        <img src="images/icon-moon.svg"  class="dark-switcher">
-      </div>
-      <div class="add-element">
-        <!-- <img src="images/icon-check.svg"  class="icon-check"> -->
-        <input type="text" id="add" placeholder="Create to a new todo">
-        <!-- <button><i class="fas fa-plus"></i></button> -->
-      </div>
-      <ul class="todoList">
-        <li>
-          <input type="checkbox" id="task-1"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          Complete online JavaScript course
-          <img src="images/icon-cross.svg" class="close">
-        </li>
-        <!-- task-1 -->
-        <li>
-          <input type="checkbox" id="task-2"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          Jog around the park 3x
-          <img src="images/icon-cross.svg" class="close">
-        </li>
-        <!-- task-2 -->
-        <li>
-          <input type="checkbox" id="task-3"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          10 minutes meditation
-          <img src="images/icon-cross.svg" class="close">
-        </li>
-        <!-- task-3 -->
-        <li>
-          <input type="checkbox" id="task-4"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          Read for 1 hour
-          <img src="images/icon-cross.svg" class="close">
-        </li>
-        <!-- task-4 -->
-        <li>
-          <input type="checkbox" id="task-5"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          Pick up groceries
-          <img src="images/icon-cross.svg" class="close">
-        </li>
-        <!-- task-5 -->
-        <li>
-          <input type="checkbox" id="task-6"> 
-          <!-- <img src="images/icon-check.svg" class="check"> -->
-          Complete Todo App on Frontend Mentor
-          <img src="images/icon-cross.svg" class="close"></li>
-      </ul>
-      <div class="delete-stuff">
-        <p class="task-count">5 items left</p>
-        <button class="btn-delete">All</button>
-        <button class="btn-delete">Active</button>
-        <button class="btn-delete">Completed</button>
-        <button class="btn-delete">Clear Completed</button>
-      </div>
+  <div class="background">
+    <!-- <img src="images/bg-desktop-light.jpg" alt="backgroud-photo-light" class="photo-bgc-light"> -->
+  </div>
+  <div class="wrapper">
+    <header>
+      <h2>Todo</h2>
+      <img src="images/icon-moon.svg" class="switch-dark">
+    </header>
+    <div class="add-todo">
+      <input type="checkbox" id="add-task">
+      <input type="text" id="#add" placeholder="Create a new todo...">
+      <button class="btnCheck">Add</button>
     </div>
+    <div class="todo-content">
+    <ul class="todo-list">
+      <li><input type="checkbox" id="todo_1">
+       <span>Comlete online JavaScript course</span>
+       <img src="images/icon-cross.svg" alt="delete" class="delete">
+      </li>
+      <li>
+        <input type="checkbox" id="todo_2">
+        <span>Jog around the park 3x</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete">
+      </li>
+      <li>
+        <input type="checkbox" id="todo_3">
+        <span>10 minutes meditation</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete">
+      </li>
+      <li>
+        <input type="checkbox" id="todo_4">
+        <span>Read for 1 hour</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete">
+      </li>
+      <li>
+        <input type="checkbox" id="todo_5">
+        <span>Pick up groceries</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete"></li>
+      <!-- <li>
+        <input type="checkbox" id="todo_6">
+        <span>Todo App on Frontend Mentor</span>
+        <img src="images/icon-cross.svg" alt="delete" class="delete"></li> -->
+    </ul>
+    <div class="todo-activation-buttons">
+      <p>5 items left</p>
+      <button class="btn-action">All</button>
+      <button class="btn-action">Active</button>
+      <button class="btn-action">Completed</button>
+      <button class="btn-action">Clear Completed</button>
+    </div>
+  </div>
     <footer>
-      <p>Drag and drop to reorder list</p>
+      <p>Drag and drop to reader list</p>
     </footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-    <script src = "index.js"></script>
+  </div>
+  <script src = "index.js"></script>
 </body>
 </html>
