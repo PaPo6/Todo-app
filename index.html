@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5832a56301.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Todo app</title>
@@ -22,17 +23,24 @@
       <img src="images/icon-moon.svg" class="switch-dark">
     </header>
     <div class="add-todo">
-      <input type="checkbox" id="add-task">
+      <!-- <i class ="far fa-circle co" action ="complete"></i> -->
+      <!-- <img src="images/icon-check.svg" alt="" class = "check"> -->
+      <div class="circle"></div>
+      <!-- <input type="checkbox" id="add-task"> -->
       <input type="text" id="add" placeholder="Create a new todo...">
       <button class="btnCheck">Add</button>
     </div>
     <div class="todo-content">
     <ul class="todo-list">
-      <li><input type="checkbox" id="todo_1">
-       <span>Comlete online JavaScript course</span>
-       <img src="images/icon-cross.svg" alt="delete" class="delete">
-      </li>
       <li>
+       <label for= "" class="list-item">
+       <input type="checkbox" id="todo_1" checked>
+       <span class = "checkmark"></span>
+       <span class="text">Comlete online JavaScript course</span>
+       <img src="images/icon-cross.svg" alt="delete" class="delete">
+      </label>
+      </li>
+     <!-- <li>
         <input type="checkbox" id="todo_2">
         <span>Jog around the park 3x</span>
         <img src="images/icon-cross.svg" alt="delete" class="delete">
@@ -51,8 +59,8 @@
         <input type="checkbox" id="todo_5">
         <span>Pick up groceries</span>
         <img src="images/icon-cross.svg" alt="delete" class="delete"></li>
-      <!-- <li>
-        <input type="checkbox" id="todo_6">
+      <li> --> 
+        <!-- <input type="checkbox" id="todo_6">
         <span>Todo App on Frontend Mentor</span>
         <img src="images/icon-cross.svg" alt="delete" class="delete"></li> -->
     </ul>
