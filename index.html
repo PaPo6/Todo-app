@@ -20,7 +20,7 @@
   <div class="wrapper">
     <header>
       <h2>Todo</h2>
-      <img src="images/icon-moon.svg" class="switch-dark">
+      <div class="switcher"></div>
     </header>
     <div class="add-todo">
       <!-- <i class ="far fa-circle co" action ="complete"></i> -->
@@ -32,46 +32,29 @@
     </div>
     <div class="todo-content">
     <ul class="todo-list">
-      <li>
-       <label for= "" class="list-item">
-       <input type="checkbox" id="todo_1" checked>
-       <span class = "checkmark"></span>
-       <span class="text">Comlete online JavaScript course</span>
-       <img src="images/icon-cross.svg" alt="delete" class="delete">
-      </label>
-      </li>
-     <!-- <li>
-        <input type="checkbox" id="todo_2">
-        <span>Jog around the park 3x</span>
-        <img src="images/icon-cross.svg" alt="delete" class="delete">
-      </li>
-      <li>
-        <input type="checkbox" id="todo_3">
-        <span>10 minutes meditation</span>
-        <img src="images/icon-cross.svg" alt="delete" class="delete">
-      </li>
-      <li>
-        <input type="checkbox" id="todo_4">
-        <span>Read for 1 hour</span>
-        <img src="images/icon-cross.svg" alt="delete" class="delete">
-      </li>
-      <li>
-        <input type="checkbox" id="todo_5">
-        <span>Pick up groceries</span>
-        <img src="images/icon-cross.svg" alt="delete" class="delete"></li>
-      <li> --> 
-        <!-- <input type="checkbox" id="todo_6">
-        <span>Todo App on Frontend Mentor</span>
-        <img src="images/icon-cross.svg" alt="delete" class="delete"></li> -->
+      
     </ul>
     <div class="todo-activation-buttons">
-      <p>5 items left</p>
-      <button class="btn-action">All</button>
-      <button class="btn-action">Active</button>
-      <button class="btn-action">Completed</button>
-      <button class="btn-action">Clear Completed</button>
+      <!-- <div><span class="itemsLeft"></span> items left</div> -->
+      <div class="items-left"><span></span> items left</div>
+      <div class="filter">
+        <label>
+          <input type="checkbox" id="all" checked>
+          <span>All</span>
+        </label>
+        <label>
+          <input type="checkbox" id="active">
+          <span>Active</span>
+        </label>
+        <label>
+          <input type="checkbox" id="completed">
+          <span>Completed</span>
+        </label>
+      </div>
+      <span class="clearAll">Clear Completed</span>
+      </div>
     </div>
-  </div>
+
     <footer>
       <p>Drag and drop to reader list</p>
     </footer>
